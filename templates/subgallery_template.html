@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<<~~HEADER~~>>
+  <link rel="stylesheet" href="<<~~CSS~~>>lightbox.min.css" type="text/css">
+  <script src="<<~~JS~~>>lightbox.min.js"></script>
+  </head>
+  
+  <body>
+    
+<<~~NAVBAR~~>>
+
+    <div class="container gallery-title">
+      <div class="row text-center">
+        
+        <div class="row text-center">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:10vh;"></div>
+        </div>
+        
+        <div class"col-lg-12 col-md-12 col-sm-12 col-xs-12"><h2><<~~GALLERYTITLE~~>></h2>
+        </div>
+        
+        <div class="row text-center">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:10vh;"></div>
+        </div>
+        
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+          <a type="button" class="btn btn-default" aria-label="Back" href="../gallery.html"><span class="glyphicon glyphicon-chevron-left back-animation" aria-hidden="true"></span>  Terug</a>
+        </div>
+      </div>
+    
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 gallery-top-row">
+<<~~SUBGALLERYITEM~~>>
+          </div>
+      </div>
+
+
+        
+    </div>
+
+    <div class="container">
+    
+      <div class="row text-center">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:5vh;"></div>
+      </div>
+    
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+          <a type="button" class="btn btn-default" aria-label="Back" href="../gallery.html"><span class="glyphicon glyphicon-chevron-left back-animation" aria-hidden="true"></span>  Terug</a>        </div>
+      </div>
+    
+      <div class="row text-center">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:10vh;"></div>
+      </div>
+    </div>
+
+<<~~FOOTER~~>>
+  </body>    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="<<~~JS~~>>lightbox.min.js"></script>
+    <!--<script src="<<~~JS~~>>bootstrap.min.js"></script>-->
+    
+    <script type="text/javascript">
+      $(function(){
+        $('a[rel=lightbox-rel]').lightBox({
+          containerResizeSpeed: 250,
+          fixedNavigation: true,
+          alwaysShowNavOnTouchDevices: true
+        });
+      });
+    </script>
+
+</html>
